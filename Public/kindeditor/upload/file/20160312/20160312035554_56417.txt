@@ -1,0 +1,33 @@
+创建数据库：
+CREATE DATABASE `news_manage` ;
+创建数据表manage_user_info:
+CREATE TABLE `manage_user_info` (
+  `id` int(11) NOT NULL auto_increment,
+  `manage_name` varchar(32) NOT NULL,
+  `password` varchar(32) NOT NULL,
+  `last_time` datetime NOT NULL,
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `id` (`id`)
+) ;
+创建数据表module_info:
+CREATE TABLE `module_info` (
+  `id` int(11) NOT NULL auto_increment,
+  `show_order` int(11) NOT NULL,
+  `module_name` varchar(16) NOT NULL,
+  `add_user` varchar(32) NOT NULL,
+  `add_time` datetime NOT NULL,
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `id` (`id`)
+) ;
+创建数据表news_info: 
+CREATE TABLE `news_info` (
+  `id` int(11) NOT NULL auto_increment,
+  `module_id` int(11) NOT NULL,
+  `title` varchar(88) NOT NULL,
+  `cont` text NOT NULL,
+  `times` int(11) NOT NULL default '0',
+  `add_user` varchar(32) NOT NULL,
+  `add_time` datetime NOT NULL,
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `id` (`id`)
+) ;

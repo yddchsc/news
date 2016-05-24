@@ -1,0 +1,3 @@
+[ 2016-03-12T10:24:56+08:00 ] 127.0.0.1 /news/Home/News/save
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
